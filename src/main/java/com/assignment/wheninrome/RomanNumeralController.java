@@ -13,6 +13,9 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 @RestController
 public class RomanNumeralController {
 
+    protected static final String MISSING_PARAMETER_MESSAGE = "Please include a parameter in the form of: " +
+            "/romannumeral?query={integer}";
+
     @Autowired
     private RomanNumeralService romanNumeralService;
 
@@ -69,7 +72,7 @@ public class RomanNumeralController {
     public ResponseEntity<String> handleMissingParameter() {
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
-                .body("Please include a parameter in the form of: /romannumeral?query={integer}");
+                .body(MISSING_PARAMETER_MESSAGE);
     }
 
 }

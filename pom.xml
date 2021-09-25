@@ -8,8 +8,8 @@
 		<version>2.5.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>rest-service-initial</artifactId>
+	<groupId>com.assignment</groupId>
+	<artifactId>roman-numeral-rest-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>when-in-rome</name>
 	<description>Simple Roman Numeral Converter</description>
