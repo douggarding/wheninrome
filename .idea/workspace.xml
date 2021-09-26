@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -31,6 +32,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
@@ -40,10 +42,73 @@
       <recent name="com.assignment.wheninrome" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RomanNumeralServiceTest">
+  <component name="RunManager" selected="JUnit.RomanNumeralControllerTest">
     <configuration name="WhenInRome" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RestServiceApplication" />
       <module name="rest-service-initial" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomanNumeralControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-service-initial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assignment.wheninrome.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomanNumeralControllerIntegrationTest.whenInvalidInput_thenReturns400" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-service-initial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assignment.wheninrome.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="whenInvalidInput_thenReturns400" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomanNumeralControllerIntegrationTest.whenMissingInput_thenReturns400" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-service-initial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assignment.wheninrome.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="whenMissingInput_thenReturns400" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomanNumeralControllerIntegrationTest.whenMissingParameter_thenReturns400" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-service-initial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assignment.wheninrome.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="whenMissingParameter_thenReturns400" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -63,69 +128,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanNumeralControllerTest.handleIllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-service-initial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.assignment.wheninrome.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerTest" />
-      <option name="METHOD_NAME" value="handleIllegalArgumentException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RomanNumeralControllerTest.handleMissingParameter_MissingServletRequestParameterException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-service-initial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.assignment.wheninrome.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerTest" />
-      <option name="METHOD_NAME" value="handleMissingParameter_MissingServletRequestParameterException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RomanNumeralControllerTest.romanNumeral_ConvertsNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-service-initial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.assignment.wheninrome.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerTest" />
-      <option name="METHOD_NAME" value="romanNumeral_ConvertsNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RomanNumeralServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-service-initial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.assignment.wheninrome.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,19 +141,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.WhenInRome" />
+      <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenInvalidInput_thenReturns400" />
+      <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenMissingInput_thenReturns400" />
+      <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenMissingParameter_thenReturns400" />
+      <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest" />
       <item itemvalue="JUnit.RomanNumeralControllerTest" />
-      <item itemvalue="JUnit.RomanNumeralControllerTest.romanNumeral_ConvertsNumber" />
-      <item itemvalue="JUnit.RomanNumeralControllerTest.handleIllegalArgumentException" />
-      <item itemvalue="JUnit.RomanNumeralControllerTest.handleMissingParameter_MissingServletRequestParameterException" />
-      <item itemvalue="JUnit.RomanNumeralServiceTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RomanNumeralServiceTest" />
         <item itemvalue="JUnit.RomanNumeralControllerTest" />
-        <item itemvalue="JUnit.RomanNumeralControllerTest.handleMissingParameter_MissingServletRequestParameterException" />
-        <item itemvalue="JUnit.RomanNumeralControllerTest.handleIllegalArgumentException" />
-        <item itemvalue="JUnit.RomanNumeralControllerTest.romanNumeral_ConvertsNumber" />
+        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest" />
+        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenMissingParameter_thenReturns400" />
+        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenMissingInput_thenReturns400" />
+        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenInvalidInput_thenReturns400" />
       </list>
     </recent_temporary>
   </component>
@@ -165,5 +167,16 @@
       <updated>1632599049000</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/RomanNumeralControllerIntegrationTest.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

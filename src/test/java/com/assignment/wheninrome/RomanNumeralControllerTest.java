@@ -8,6 +8,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
+import static com.assignment.wheninrome.RomanNumeralController.BAD_PARAMETER_VALUE_MESSAGE;
 import static com.assignment.wheninrome.RomanNumeralController.MISSING_PARAMETER_MESSAGE;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
@@ -38,15 +39,14 @@ class RomanNumeralControllerTest {
     }
 
     @Test
-    void handleIllegalArgumentException() {
-        IllegalArgumentException exception = new IllegalArgumentException("Bad argument");
-        ResponseEntity<String> response = romanNumeralController.handleIllegalArgumentException(exception);
+    void handleIInvalidParameter() {
+        ResponseEntity<String> response = romanNumeralController.handleInvalidParameter();
         assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
-        assertEquals("Bad argument", response.getBody());
+        assertEquals(BAD_PARAMETER_VALUE_MESSAGE, response.getBody());
     }
 
     @Test
-    void handleMissingParameter_MissingServletRequestParameterException() {
+    void handleMissingParameter() {
         ResponseEntity<String> response = romanNumeralController.handleMissingParameter();
         assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
         assertEquals(MISSING_PARAMETER_MESSAGE, response.getBody());

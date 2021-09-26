@@ -33,8 +33,7 @@ public class RomanNumeralService {
     public String convertToRomanNumeral(int inputValue) throws IllegalArgumentException {
 
         if (inputValue < 1 || inputValue > 3999) {
-            throw new IllegalArgumentException("Only integer values between 1 and 3999 can be " +
-                    "converted to Roman numerals.");
+            throw new IllegalArgumentException("Cannot convert values outside the range of 1-3999.");
         }
 
         StringBuilder romanNumeral = new StringBuilder();
