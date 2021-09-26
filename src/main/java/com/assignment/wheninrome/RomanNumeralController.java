@@ -46,10 +46,15 @@ public class RomanNumeralController {
      * @throws IllegalArgumentException - Thrown when an integer incompatible with Roman numerals is given.
      */
     @GetMapping(ROMAN_NUMERAL_PATH)
-    public RomanNumeral romanNumeral(@RequestParam(value = ROMAN_NUMERAL_PARAM) @Min(1) @Max(3999) int input)
+    public RomanNumeral romanNumeral(@RequestParam(ROMAN_NUMERAL_PARAM) @Min(1) @Max(3999) int input)
             throws IllegalArgumentException {
         String output = romanNumeralService.convertToRomanNumeral(input);
         return new RomanNumeral(input, output);
+    }
+
+    @GetMapping("/student")
+    ResponseEntity<String> studentR(@RequestParam("age") @Min(5) int age) {
+        return ResponseEntity.ok("Your age is " + age);
     }
 
     /**

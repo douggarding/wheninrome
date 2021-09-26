@@ -42,7 +42,7 @@
       <recent name="com.assignment.wheninrome" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RomanNumeralControllerTest">
+  <component name="RunManager" selected="JUnit.RomanNumeralControllerIntegrationTest">
     <configuration name="WhenInRome" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RestServiceApplication" />
       <module name="rest-service-initial" />
@@ -65,7 +65,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanNumeralControllerIntegrationTest.whenInvalidInput_thenReturns400" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RomanNumeralControllerIntegrationTest.whenParameterMalformed_thenReturns400" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-service-initial" />
       <extension name="coverage">
         <pattern>
@@ -75,13 +75,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
       <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerIntegrationTest" />
-      <option name="METHOD_NAME" value="whenInvalidInput_thenReturns400" />
+      <option name="METHOD_NAME" value="whenParameterMalformed_thenReturns400" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanNumeralControllerIntegrationTest.whenMissingInput_thenReturns400" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RomanNumeralControllerIntegrationTest.whenParameterTooLarge_thenReturns400" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-service-initial" />
       <extension name="coverage">
         <pattern>
@@ -91,13 +91,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
       <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerIntegrationTest" />
-      <option name="METHOD_NAME" value="whenMissingInput_thenReturns400" />
+      <option name="METHOD_NAME" value="whenParameterTooLarge_thenReturns400" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanNumeralControllerIntegrationTest.whenMissingParameter_thenReturns400" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RomanNumeralControllerIntegrationTest.whenParameterTooSmall_thenReturns400" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-service-initial" />
       <extension name="coverage">
         <pattern>
@@ -107,13 +107,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
       <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerIntegrationTest" />
-      <option name="METHOD_NAME" value="whenMissingParameter_thenReturns400" />
+      <option name="METHOD_NAME" value="whenParameterTooSmall_thenReturns400" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanNumeralControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RomanNumeralControllerIntegrationTest.whenParameterValueIsEmpty_thenReturns400" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-service-initial" />
       <extension name="coverage">
         <pattern>
@@ -122,8 +122,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="whenParameterValueIsEmpty_thenReturns400" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,19 +142,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.WhenInRome" />
-      <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenInvalidInput_thenReturns400" />
-      <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenMissingInput_thenReturns400" />
-      <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenMissingParameter_thenReturns400" />
+      <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenParameterTooSmall_thenReturns400" />
+      <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenParameterTooLarge_thenReturns400" />
+      <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenParameterMalformed_thenReturns400" />
+      <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenParameterValueIsEmpty_thenReturns400" />
       <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest" />
-      <item itemvalue="JUnit.RomanNumeralControllerTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RomanNumeralControllerTest" />
         <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest" />
-        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenMissingParameter_thenReturns400" />
-        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenMissingInput_thenReturns400" />
-        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenInvalidInput_thenReturns400" />
+        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenParameterTooSmall_thenReturns400" />
+        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenParameterMalformed_thenReturns400" />
+        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenParameterValueIsEmpty_thenReturns400" />
+        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.whenParameterTooLarge_thenReturns400" />
       </list>
     </recent_temporary>
   </component>
@@ -168,13 +169,30 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/RomanNumeralControllerIntegrationTest.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/assignment/wheninrome/RomanNumeralController.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
