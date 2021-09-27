@@ -4,6 +4,8 @@ import javax.validation.ConstraintViolationException;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +27,8 @@ public class RomanNumeralController {
             "/romannumeral?query={integer}";
     protected static final String BAD_PARAMETER_VALUE_MESSAGE = "Only integers between 1 and 3999 can be " +
             "converted to Roman numerals.";
+
+    static final Logger LOG = LoggerFactory.getLogger(RomanNumeralController.class);
 
     @Autowired
     private RomanNumeralService romanNumeralService;
@@ -48,13 +52,9 @@ public class RomanNumeralController {
     @GetMapping(ROMAN_NUMERAL_PATH)
     public RomanNumeral romanNumeral(@RequestParam(ROMAN_NUMERAL_PARAM) @Min(1) @Max(3999) int input)
             throws IllegalArgumentException {
+        LOG.info("Begin processing request to convert " + input + " to a Roman numeral.");
         String output = romanNumeralService.convertToRomanNumeral(input);
         return new RomanNumeral(input, output);
-    }
-
-    @GetMapping("/student")
-    ResponseEntity<String> studentR(@RequestParam("age") @Min(5) int age) {
-        return ResponseEntity.ok("Your age is " + age);
     }
 
     /**
@@ -70,7 +70,10 @@ public class RomanNumeralController {
     @ExceptionHandler({ConstraintViolationException.class, MethodArgumentTypeMismatchException.class,
             IllegalArgumentException.class})
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ResponseEntity<String> handleInvalidParameter() {
+    public ResponseEntity<String> handleInvalidParameter(Exception e) {
+        // Exception messages contain more info about the failed parameter that was passed.
+        LOG.error("failed to convert value to Roman numeral.", e);
+
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
                 .body(BAD_PARAMETER_VALUE_MESSAGE);
@@ -85,7 +88,9 @@ public class RomanNumeralController {
      */
     @ExceptionHandler(MissingServletRequestParameterException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ResponseEntity<String> handleMissingParameter() {
+    public ResponseEntity<String> handleMissingParameter(Exception e) {
+        LOG.error("Parameter \"query\" was absent from URL request for converting a value to a Roman numeral.", e);
+
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
                 .body(MISSING_PARAMETER_MESSAGE);
