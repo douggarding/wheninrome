@@ -4,9 +4,11 @@ import javax.validation.ConstraintViolationException;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 
+import io.micrometer.core.annotation.Timed;
+import io.micrometer.core.instrument.Counter;
+import io.micrometer.core.instrument.MeterRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -30,8 +32,13 @@ public class RomanNumeralController {
 
     static final Logger LOG = LoggerFactory.getLogger(RomanNumeralController.class);
 
-    @Autowired
     private RomanNumeralService romanNumeralService;
+    private MeterRegistry registry;
+
+    public RomanNumeralController(MeterRegistry registry, RomanNumeralService romanNumeralService) {
+        this.romanNumeralService = romanNumeralService;
+        this.registry = registry;
+    }
 
     /**
      * Handles incoming GET requests to convert integers into Roman numerals. This functionality adheres to the
@@ -50,6 +57,7 @@ public class RomanNumeralController {
      * @throws IllegalArgumentException - Thrown when an integer incompatible with Roman numerals is given.
      */
     @GetMapping(ROMAN_NUMERAL_PATH)
+    @Timed(value="romanNumeral.time", description = "Time taken to fully execute the GET romanNumeral endpoint.")
     public RomanNumeral romanNumeral(@RequestParam(ROMAN_NUMERAL_PARAM) @Min(1) @Max(3999) int input)
             throws IllegalArgumentException {
         LOG.info("Begin processing request to convert " + input + " to a Roman numeral.");
@@ -73,6 +81,7 @@ public class RomanNumeralController {
     public ResponseEntity<String> handleInvalidParameter(Exception e) {
         // Exception messages contain more info about the failed parameter that was passed.
         LOG.error("failed to convert value to Roman numeral.", e);
+        countExceptionForMetrics(e);
 
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
@@ -90,10 +99,18 @@ public class RomanNumeralController {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ResponseEntity<String> handleMissingParameter(Exception e) {
         LOG.error("Parameter \"query\" was absent from URL request for converting a value to a Roman numeral.", e);
+        countExceptionForMetrics(e);
 
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
                 .body(MISSING_PARAMETER_MESSAGE);
+    }
+
+    protected void countExceptionForMetrics(Exception e) {
+        String exceptionType = e.getClass().getSimpleName();
+        Counter exceptionCounter = registry
+                .counter("romanNumeral.exceptions.count", "ExceptionType", exceptionType);
+        exceptionCounter.increment();
     }
 
 }
