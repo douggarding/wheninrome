@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.assignment</groupId>
-	<artifactId>roman-numeral-rest-service</artifactId>
+	<artifactId>when-in-rome-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>when-in-rome</name>
 	<description>Simple Roman Numeral Converter</description>
