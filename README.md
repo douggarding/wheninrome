@@ -1,6 +1,6 @@
 # When in Rome
 
-When in Rome is a simple RESTful web service that was built as a simple exercise to practice and demonstrate my understanding of basic web service technology. There is a single GET endpoint that takes an integer and returns its value as a Roman numeral. As a simple exercise, the funcationality and breadth of this project is limited in scope and is intended to be run locally. 
+When in Rome is a simple RESTful web service that was built as a simple exercise to practice and demonstrate my understanding of basic web service technology. There is a single GET endpoint that takes an integer and returns its value as a Roman numeral. As a simple exercise, the functionality and breadth of this project is limited in scope and is intended to be run locally. 
 
 ## Building and Running the project
 
@@ -18,7 +18,7 @@ Alternatively, there should be a compiled JAR file ready to use with a Java comm
 
 #### Calling the Endpoint
 
-There is a single endpoint to this server. It can be called by making a `GET` request using the following URI format: `http://localhost:8080/romannumeral?query={integer}`. The `{integer}` value must be a value in the range of 1-3999. A failed response will give a little detail as to the problem with the request, otherwise you'll recieve a JSON response in the form of:
+There is a single endpoint to this server. It can be called by making a `GET` request using the following URI format: `http://localhost:8080/romannumeral?query={integer}`. The `{integer}` value must be a value in the range of 1-3999. A failed response will give a little detail as to the problem with the request, otherwise you'll receive a JSON response in the form of:
 
 ```
 {
@@ -37,7 +37,7 @@ The first step of my process was to make sure I understood what the requirements
 
 #### 2. Add Testing and Error Handling
 
-There was not a hard cutover from the previous step to this one, but rather was a very blurred line where testing and error handling was added while the parts from step 1 were being built. But generally, this step involved adding unit testing, integration testing, and expanding error handling. This involved creating unit tests to test the logic of the Roman Numeral conversion, as well as the logic of the Controller that handles the incomming requests. Because unit testing doesn't include some of the precesses handled by the server's framework, integration tests helped to verify that the endpoints could successfully recieve a request, process it, and return the appropriate response. Because writing quality tests involves considering edge cases, this was a good time to consider how those scenarios would be handled and to then enhance the existing error handling to make it more robust.
+There was not a hard cutover from the previous step to this one, but rather was a very blurred line where testing and error handling was added while the parts from step 1 were being built. But generally, this step involved adding unit testing, integration testing, and expanding error handling. This involved creating unit tests to test the logic of the Roman Numeral conversion, as well as the logic of the Controller that handles the incoming requests. Because unit testing doesn't include some of the processes handled by the server's framework, integration tests helped to verify that the endpoints could successfully receive a request, process it, and return the appropriate response. Because writing quality tests involves considering edge cases, this was a good time to consider how those scenarios would be handled and to then enhance the existing error handling to make it more robust.
 
 #### 3. Add DevOps Capabilities
 
@@ -49,11 +49,11 @@ Finally, the last thing was to run through _everything_ to verify that it's all 
 
 #### Other Thoughts and Considerations on This (My) Process
 
-I feel that coding, enginering, and software development is often viewed as a highly structured, organized, technical and sometimes "linear" endeavor. However, I often tend to approach the writing of code and the creation of software as a "creative" endeavor. So naturally, my process emulates what one might go through when writing literature, composing music, or creating other forms of artwork. This of course invovles as much pre-planning and thinking as possible, but when it comes to composing, structuring, and otherwise writing code, the process is a little more free-form. A musician might write the lyrics before the music for one song, and then write the music and then the lyrics for another song. 
+I feel that coding, engineering, and software development is often viewed as a highly structured, organized, technical and sometimes "linear" endeavor. However, I often tend to approach the writing of code and the creation of software as a "creative" endeavor. So naturally, my process emulates what one might go through when writing literature, composing music, or creating other forms of artwork. This of course involves as much pre-planning and thinking as possible, but when it comes to composing, structuring, and otherwise writing code, the process is a little more free-form. A musician might write the lyrics before the music for one song, and then write the music and then the lyrics for another song. 
 
 The nature of this project also forced me to deviate slightly from what my process would normally be. I was essentially given some specifications and then instructed to go complete them in isolation. Normally, I would be asking colleagues and others for advice and suggestions along the way and changing course as correction and/or suggestions were given. I didn't have that resource available to me for this exercise. 
 
-I claim to do great work as a programmer. This does not necessarily guarantee that what I produce is always great in and of itself. But what it does guarantee is that what I produce is the greatest that _I'm_ capable of producing based on my current level of experience and knowledge. The feedback loop from the knowledge and experience that's afforded to me by teammembers is essentially for me to be able to produce truly great work, beyond what I'm currently capable of when alone. It's also an essential part of me being able to further grow and enhance my own knowledge and experience. 
+I claim to do great work as a programmer. This does not necessarily guarantee that what I produce is always great in and of itself. But what it does guarantee is that what I produce is the greatest that _I'm_ capable of producing based on my current level of experience and knowledge. The feedback loop from the knowledge and experience that's afforded to me by team members is essentially for me to be able to produce truly great work, beyond what I'm currently capable of when alone. It's also an essential part of me being able to further grow and enhance my own knowledge and experience. 
 
 ## Packaging Layout
 
@@ -73,3 +73,16 @@ The following frameworks and tools were used as a part of this project:
 * [SLF4J](http://www.slf4j.org/) for logging
 * [Micrometer](https://micrometer.io/) for aggregating application monitoring data
 * [Prometheus](https://prometheus.io/) for testing application monitoring
+
+#### Explanation of choices:
+
+* **IntelliJ IDEA**: This is the IDE I use regularly and am most familiar with. 
+* **Spring Boot**: Where I currently work we use Dropwizard and the Jersey framework for handling RESTful web services in Java, so that seemed like an obvious choice for this project. However, Spring is something I hear about _a lot_ and seems extremely popular for this type of work. Because of its ubiquitousness, I decided that this would be a good opportunity to become more familiar with it. It also had tools and support to get it up and running quickly. 
+* **Java 8**: This version was used primarily because it was the default for a Spring Boot project. Java 8 is widely adopted, and due to the small scale nature of this project, it seemed fine to just use Java 8. 
+* **Maven**: Maven is something I'm a little familiar with already and Spring is built to easily take advantage of it. Using it here seemed reasonable and efficient.
+* **JUnit**: JUnit is pretty ubiquitous for unit testing in Java and is already pre-packaged into everything and ready to use.
+* **SLF4j**: Is something I'm already a little familiar with, and Spring already provided some default configurations for it.
+* **Micrometer**: Monitoring frameworks are something I'm pretty unfamiliar with. Spring already autoconfigures and integrates with with Micrometer. Also, Micrometer has lots of support for integrating a wide variety of application monitoring tools. This seemed like a natural fit.
+* **Prometheus**: This was somewhat of an arbitrary decision out of all the available monitoring tools. This particular tool, however, was open-source and seemed to have a lot of supporting documents for getting it configured and working with Micrometer.
+
+A lot of these choices could have used a lot more in-depth consideration, and a lot more time ideally would be dedicated to better understanding the use of each tool. Given the timeframe for this project, I had to quickly pick something and start making progress. My career _so far_ has mostly had me work with codebases that have already had tools and frameworks like these chosen, set up, integrated, and configured. The timeframe for this project only allowed for a shallow understanding of many of these tools, but understanding how to configure and use frameworks like these on a deeper level is something I'd like to continue learning. 
