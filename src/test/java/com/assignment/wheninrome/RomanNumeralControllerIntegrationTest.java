@@ -67,7 +67,7 @@ class RomanNumeralControllerIntegrationTest {
                 .andReturn();
 
         String actualResultMessage = mvcResult.getResponse().getContentAsString();
-        assertEquals(BAD_PARAMETER_VALUE_MESSAGE, actualResultMessage);
+        assertEquals(BAD_PARAMETER_VALUE_RESPONSE_MESSAGE, actualResultMessage);
         verify(counter, times(1)).increment(); // Assert metrics saved
     }
 
@@ -80,7 +80,7 @@ class RomanNumeralControllerIntegrationTest {
                 .andReturn();
 
         String actualResultMessage = mvcResult.getResponse().getContentAsString();
-        assertEquals(BAD_PARAMETER_VALUE_MESSAGE, actualResultMessage);
+        assertEquals(BAD_PARAMETER_VALUE_RESPONSE_MESSAGE, actualResultMessage);
     }
 
     @Test
@@ -92,7 +92,7 @@ class RomanNumeralControllerIntegrationTest {
                 .andReturn();
 
         String actualResultMessage = mvcResult.getResponse().getContentAsString();
-        assertEquals(BAD_PARAMETER_VALUE_MESSAGE, actualResultMessage);
+        assertEquals(BAD_PARAMETER_VALUE_RESPONSE_MESSAGE, actualResultMessage);
         verify(counter, times(1)).increment(); // Assert Exception metric saved
     }
 
@@ -105,7 +105,7 @@ class RomanNumeralControllerIntegrationTest {
                 .andReturn();
 
         String actualResultMessage = mvcResult.getResponse().getContentAsString();
-        assertEquals(BAD_PARAMETER_VALUE_MESSAGE, actualResultMessage);
+        assertEquals(BAD_PARAMETER_VALUE_RESPONSE_MESSAGE, actualResultMessage);
         verify(counter, times(1)).increment(); // Assert Exception metric saved
     }
 
@@ -118,7 +118,7 @@ class RomanNumeralControllerIntegrationTest {
                 .andReturn();
 
         String actualResultMessage = mvcResult.getResponse().getContentAsString();
-        assertEquals(BAD_PARAMETER_VALUE_MESSAGE, actualResultMessage);
+        assertEquals(BAD_PARAMETER_VALUE_RESPONSE_MESSAGE, actualResultMessage);
         verify(counter, times(1)).increment(); // Assert Exception metric saved
     }
 
@@ -130,7 +130,7 @@ class RomanNumeralControllerIntegrationTest {
                 .andReturn();
 
         String actualResultMessage = mvcResult.getResponse().getContentAsString();
-        assertEquals(MISSING_PARAMETER_MESSAGE, actualResultMessage);
+        assertEquals(MISSING_PARAMETER_RESPONSE_MESSAGE, actualResultMessage);
         verify(counter, times(1)).increment(); // Assert Exception metric saved
     }
 

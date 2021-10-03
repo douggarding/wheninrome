@@ -25,15 +25,15 @@ public class RomanNumeralController {
 
     protected static final String ROMAN_NUMERAL_PATH = "/romannumeral";
     protected static final String ROMAN_NUMERAL_PARAM = "query";
-    protected static final String MISSING_PARAMETER_MESSAGE = "Please include a parameter in the form of: " +
+    protected static final String MISSING_PARAMETER_RESPONSE_MESSAGE = "Please include a parameter in the form of: " +
             "/romannumeral?query={integer}";
-    protected static final String BAD_PARAMETER_VALUE_MESSAGE = "Only integers between 1 and 3999 can be " +
+    protected static final String BAD_PARAMETER_VALUE_RESPONSE_MESSAGE = "Only integers between 1 and 3999 can be " +
             "converted to Roman numerals.";
 
-    static final Logger LOG = LoggerFactory.getLogger(RomanNumeralController.class);
+    private static final Logger LOG = LoggerFactory.getLogger(RomanNumeralController.class);
 
-    private RomanNumeralService romanNumeralService;
-    private MeterRegistry registry;
+    private final RomanNumeralService romanNumeralService;
+    private final MeterRegistry registry;
 
     public RomanNumeralController(MeterRegistry registry, RomanNumeralService romanNumeralService) {
         this.romanNumeralService = romanNumeralService;
@@ -85,7 +85,7 @@ public class RomanNumeralController {
 
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
-                .body(BAD_PARAMETER_VALUE_MESSAGE);
+                .body(BAD_PARAMETER_VALUE_RESPONSE_MESSAGE);
     }
 
     /**
@@ -103,9 +103,15 @@ public class RomanNumeralController {
 
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
-                .body(MISSING_PARAMETER_MESSAGE);
+                .body(MISSING_PARAMETER_RESPONSE_MESSAGE);
     }
 
+    /**
+     * Helper method to reduce code duplication. For the sake of metrics, takes an Exception and records increases the
+     * registry count of Exceptions while tracking the type of exception that was caught.
+     *
+     * @param e - Exception that we're counting for the metrics.
+     */
     protected void countExceptionForMetrics(Exception e) {
         String exceptionType = e.getClass().getSimpleName();
         Counter exceptionCounter = registry

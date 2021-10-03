@@ -5,7 +5,7 @@ package com.assignment.wheninrome;
  */
 public class RomanNumeral {
 
-    private final String input; // Per the specifications, the JSON response input value should be a String
+    private final String input; // Per the specifications, the JSON response "input" value should be a String
     private final String output;
 
     public RomanNumeral(int input, String output) {
