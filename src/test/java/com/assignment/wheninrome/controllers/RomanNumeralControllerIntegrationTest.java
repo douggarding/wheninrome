@@ -1,5 +1,7 @@
-package com.assignment.wheninrome;
+package com.assignment.wheninrome.controllers;
 
+import com.assignment.wheninrome.models.RomanNumeral;
+import com.assignment.wheninrome.services.RomanNumeralService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
@@ -14,7 +16,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 
-import static com.assignment.wheninrome.RomanNumeralController.*;
+import static com.assignment.wheninrome.controllers.RomanNumeralController.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;

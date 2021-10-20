@@ -1,4 +1,4 @@
-package com.assignment.wheninrome;
+package com.assignment.wheninrome.models;
 
 /**
  * Models the response values for converting an integer into a Roman numeral.

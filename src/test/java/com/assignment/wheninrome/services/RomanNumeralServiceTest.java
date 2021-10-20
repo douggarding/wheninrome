@@ -1,4 +1,4 @@
-package com.assignment.wheninrome;
+package com.assignment.wheninrome.services;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -110,7 +110,7 @@ class RomanNumeralServiceTest {
      */
     @Test
     void checkAllValues() throws IOException {
-        File file = new File("src/test/java/com/assignment/wheninrome/AllRomanNumerals.txt");
+        File file = new File("src/test/java/com/assignment/wheninrome/services/AllRomanNumerals.txt");
         BufferedReader bufferedReader = new BufferedReader(new FileReader(file));
 
         String listRomanNumeral;

@@ -1,4 +1,4 @@
-package com.assignment.wheninrome;
+package com.assignment.wheninrome.services;
 
 import org.springframework.stereotype.Service;
 

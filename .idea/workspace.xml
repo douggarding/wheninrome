@@ -7,19 +7,23 @@
     <list default="true" id="d1c7ddba-d66f-41ea-81d6-7d10c09618fa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/application.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/wheninrome/RomanNumeral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/wheninrome/RomanNumeral.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/wheninrome/RomanNumeralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/wheninrome/RomanNumeralController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/RomanNumeralControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/RomanNumeralControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/RomanNumeralControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/RomanNumeralControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/RomanNumeralServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/RomanNumeralServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.assignment.wheninrome.RomanNumeralControllerIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.assignment.wheninrome.RomanNumeralControllerIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.assignment.wheninrome.RomanNumeralControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.assignment.wheninrome.RomanNumeralControllerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.assignment.wheninrome.RomanNumeralServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.assignment.wheninrome.RomanNumeralServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.assignment.wheninrome.RomanNumeralControllerIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.assignment.wheninrome.RomanNumeralControllerIntegrationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.assignment.wheninrome.RomanNumeralControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.assignment.wheninrome.RomanNumeralControllerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.assignment.wheninrome.RomanNumeralServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.assignment.wheninrome.RomanNumeralServiceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/when-in-rome-service-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/when-in-rome-service-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/when-in-rome-service-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/when-in-rome-service-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.log.2021-09-27.0.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/wheninrome/RomanNumeral.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/wheninrome/models/RomanNumeral.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/wheninrome/RomanNumeralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/wheninrome/controllers/RomanNumeralController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/wheninrome/RomanNumeralService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/wheninrome/services/RomanNumeralService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/AllRomanNumerals.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/services/AllRomanNumerals.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/RomanNumeralControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/controllers/RomanNumeralControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/RomanNumeralControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/controllers/RomanNumeralControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/RomanNumeralServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/assignment/wheninrome/services/RomanNumeralServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assignment/wheninrome/RomanNumeral.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assignment/wheninrome/RomanNumeralController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assignment/wheninrome/RomanNumeralService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/assignment/wheninrome/RomanNumeralServiceAlt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/assignment/wheninrome/RomanNumeralControllerIntegrationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/assignment/wheninrome/RomanNumeralControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/assignment/wheninrome/RomanNumeralServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +67,7 @@
       <recent name="com.assignment.wheninrome" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RomanNumeralServiceTest.testSpeedOfConversionImplementations">
+  <component name="RunManager" selected="Application.WhenInRome">
     <configuration name="WhenInRome" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -82,25 +86,9 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerIntegrationTest" />
+      <option name="PACKAGE_NAME" value="com.assignment.wheninrome.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.controllers.RomanNumeralControllerIntegrationTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RomanNumeralControllerIntegrationTest.getRomanNumeral_whenValidInput_thenReturns200" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest-service-initial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.assignment.wheninrome.Models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerIntegrationTest" />
-      <option name="METHOD_NAME" value="getRomanNumeral_whenValidInput_thenReturns200" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,28 +97,43 @@
       <module name="rest-service-initial" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.assignment.wheninrome.Models.*" />
+          <option name="PATTERN" value="com.assignment.wheninrome.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerTest" />
+      <option name="PACKAGE_NAME" value="com.assignment.wheninrome.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.controllers.RomanNumeralControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanNumeralControllerTest.romanNumeral_ConvertsNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RomanNumeralServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-service-initial" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.assignment.wheninrome.Models.*" />
+          <option name="PATTERN" value="com.assignment.wheninrome.services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralControllerTest" />
-      <option name="METHOD_NAME" value="romanNumeral_ConvertsNumber" />
+      <option name="PACKAGE_NAME" value="com.assignment.wheninrome.services" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.services.RomanNumeralServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RomanNumeralServiceTest.checkAllValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest-service-initial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.assignment.wheninrome.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.assignment.wheninrome.services" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.services.RomanNumeralServiceTest" />
+      <option name="METHOD_NAME" value="checkAllValues" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,12 +143,12 @@
       <module name="rest-service-initial" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.assignment.wheninrome.*" />
+          <option name="PATTERN" value="com.assignment.wheninrome.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.assignment.wheninrome" />
-      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.RomanNumeralServiceTest" />
+      <option name="PACKAGE_NAME" value="com.assignment.wheninrome.services" />
+      <option name="MAIN_CLASS_NAME" value="com.assignment.wheninrome.services.RomanNumeralServiceTest" />
       <option name="METHOD_NAME" value="testSpeedOfConversionImplementations" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -188,20 +191,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.WhenInRome" />
-      <item itemvalue="JUnit.RomanNumeralControllerTest" />
-      <item itemvalue="JUnit.RomanNumeralControllerTest.romanNumeral_ConvertsNumber" />
       <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest" />
-      <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.getRomanNumeral_whenValidInput_thenReturns200" />
-      <item itemvalue="Maven.roman-numeral-rest-service" />
       <item itemvalue="JUnit.RomanNumeralServiceTest.testSpeedOfConversionImplementations" />
+      <item itemvalue="JUnit.RomanNumeralServiceTest.checkAllValues" />
+      <item itemvalue="Maven.roman-numeral-rest-service" />
+      <item itemvalue="JUnit.RomanNumeralServiceTest" />
+      <item itemvalue="JUnit.RomanNumeralControllerTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RomanNumeralServiceTest.testSpeedOfConversionImplementations" />
-        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest" />
-        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest.getRomanNumeral_whenValidInput_thenReturns200" />
         <item itemvalue="JUnit.RomanNumeralControllerTest" />
-        <item itemvalue="JUnit.RomanNumeralControllerTest.romanNumeral_ConvertsNumber" />
+        <item itemvalue="JUnit.RomanNumeralControllerIntegrationTest" />
+        <item itemvalue="JUnit.RomanNumeralServiceTest" />
+        <item itemvalue="JUnit.RomanNumeralServiceTest.checkAllValues" />
+        <item itemvalue="JUnit.RomanNumeralServiceTest.testSpeedOfConversionImplementations" />
       </list>
     </recent_temporary>
   </component>

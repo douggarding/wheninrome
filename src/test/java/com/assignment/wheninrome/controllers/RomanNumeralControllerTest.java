@@ -1,5 +1,8 @@
-package com.assignment.wheninrome;
+package com.assignment.wheninrome.controllers;
 
+import com.assignment.wheninrome.controllers.RomanNumeralController;
+import com.assignment.wheninrome.models.RomanNumeral;
+import com.assignment.wheninrome.services.RomanNumeralService;
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.junit.jupiter.api.*;
@@ -13,8 +16,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 
-import static com.assignment.wheninrome.RomanNumeralController.BAD_PARAMETER_VALUE_RESPONSE_MESSAGE;
-import static com.assignment.wheninrome.RomanNumeralController.MISSING_PARAMETER_RESPONSE_MESSAGE;
+import static com.assignment.wheninrome.controllers.RomanNumeralController.BAD_PARAMETER_VALUE_RESPONSE_MESSAGE;
+import static com.assignment.wheninrome.controllers.RomanNumeralController.MISSING_PARAMETER_RESPONSE_MESSAGE;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
