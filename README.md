@@ -8,9 +8,9 @@ When in Rome is a simple RESTful web service that was built as a simple exercise
 
 There are a few simple commands that can be used to build and and run this project, but they require Maven being installed on your machine. [Maven installation instructions here](https://maven.apache.org/install.html).
 
-To run the project open a terminal and navigate to the project's root directory. You can then run the server by entering `./mvnw spring-boot:run`. 
+To run the project open a terminal and navigate to the project's root directory. You can then run the server by entering `mvn spring-boot:run`. (Alternatively use `./mvnw spring-boot:run` if you're using the Maven Wrapper.)
 
-If there are complications, you can try flushing the existing compiled classes and other resources by executing `./mvnw clean`. Then run `./mvnw install` whcih will compile, test, and package the project back into a fresh JAR file. 
+If there are complications, you can try flushing the existing compiled classes and other resources by executing `mvn clean`. Then run `mvn install` which will compile, test, and package the project back into a fresh JAR file. 
 
 #### Using Java
 
